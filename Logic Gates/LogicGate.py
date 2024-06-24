@@ -1,11 +1,3 @@
-def convertOutput(inp):
-    if type(inp) == bool:
-        if inp: return 1
-        return 0
-    if type(inp) == int:
-        if inp == 1: return True
-        return False
-        
 class LogicGate:
     def __init__(self) -> None:
         self.returnType = bool
