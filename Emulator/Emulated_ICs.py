@@ -35,7 +35,7 @@ class ICs:
             
             self.clk = CLK
             
-            return ([self.register[-1], not self.register[-1]], self.register) # return [Qh = normal, nQh = inverted]
+            return ([self.register[-1], not self.register[-1]]) # return [Qh = normal, nQh = inverted]
 
     # Basic 2-INP Logic Gates: 
     def INVERT_CD40106BE(A: bool = False) -> bool: return not A
@@ -45,15 +45,3 @@ class ICs:
     def NOR_CD4001BE(A: bool = False, B: bool = False) -> bool: return not (A or B)
     def XOR_CD4030BE(A: bool = False, B: bool = False) -> bool: return (A and not B) or (not A and B)
     def XNOR_CD4077BE(A: bool = False, B: bool = False) -> bool: return not ((A and not B) or (not A and B))
-
-print(ICs.Multiplexer_CD74HCT151E(C=False, B=False, A=False, DATA=[False, True, True, True, False, True, True, False]))
-print(ICs.Demultiplexer_CD74HCT238E(G2=True, C=True, B=True, A=False))
-
-# Shiftregister Code Example:
-clock = False
-SER_ = True
-register1 = ICs.Shiftregister_SN74LS165AN()
-for i in range(20):
-    clock = not clock
-    print(register1.Pins(CLK=clock, CLK_INH=True, SH_nLD=True, SER=SER_))
-    SER_ = False
