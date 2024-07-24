@@ -1,6 +1,11 @@
 # TIICBC Controller (Serial Input & CLK) + Emulator Set
+## TIICBC CPU Main Module
+The main module contains crucial logic like the jump-instruction, program counter, line addressing etc..
+
+![](https://github.com/ortanaV2/TIICBC-Controller-Emulator/blob/main/IMG_20240723_190550167~2.jpg?raw=true)
 ## Serial Input & CLK
-Controlled by the ESP8266 Microcontroller. The Input data and the CLK is controlled by the microcontroller which has 3 output pins (CLK, TRANSFER_STATE, DATA_INPUT). Circuit Picture:
+Controlled by the ESP8266 microcontroller. The input data and the CLK is controlled by the microcontroller which has 3 output pins (CLK, TRANSFER_STATE, DATA_INPUT). Circuit picture:
+
 ![](https://github.com/ortanaV2/TIICBC_Controller/blob/main/IMG_20240619_224204790~2.jpg?raw=true)
 ## Emulator & Datasheets
 The TIICBC emulator is able to emulate various systems that can be digitally traced and analyzed step by step. Any circuit can be created using the classes and methods that are the IC objects. These are the datasheets for the ICs:
