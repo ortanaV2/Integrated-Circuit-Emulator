@@ -3,7 +3,7 @@
 The main module contains crucial logic like the jump-instruction, program counter, line addressing etc..
 
 ![](https://github.com/ortanaV2/TIICBC-Controller-Emulator/blob/main/IMG_20240723_190550167~2.jpg?raw=true)
-## Serial Input & CLK
+## Serial Input & CLK *[OUTDATED]*
 Controlled by the ESP8266 microcontroller. The input data and the CLK is controlled by the microcontroller which has 3 output pins (CLK, TRANSFER_STATE, DATA_INPUT). Circuit picture:
 
 ![](https://github.com/ortanaV2/TIICBC_Controller/blob/main/IMG_20240619_224204790~2.jpg?raw=true)
