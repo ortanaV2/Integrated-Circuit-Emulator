@@ -6,6 +6,7 @@ The main module contains crucial logic like the jump-instruction, program counte
 
 ## Emulator & Datasheets
 The TIICBC emulator is able to emulate various systems that can be digitally traced and analyzed step by step. Any circuit can be created using the classes and methods that are the IC objects. These are the datasheets for the ICs:
+
 ![](https://github.com/ortanaV2/TIICBC-Controller-Emulator/blob/main/Emulator%20Datasheets/CD4011BE.png?raw=true)
 ![](https://github.com/ortanaV2/TIICBC-Controller-Emulator/blob/main/Emulator%20Datasheets/CD40106BE.png?raw=true)
 ![](https://github.com/ortanaV2/TIICBC-Controller-Emulator/blob/main/Emulator%20Datasheets/CD4011BE.png?raw=true)
